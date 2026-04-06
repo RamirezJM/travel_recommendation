@@ -1,14 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:wght@500;600&display=swap"
+    rel="stylesheet">
+
   <link rel="stylesheet" href="assets/css/styles.css">
-  <title>Travel Recommendation</title>
+  <title>Boundless Travel</title>
 </head>
+
 <body>
-  
+  <header>
+    <div class="title">
+      <img src="assets/images/logo.png" alt="company logo" class="title__img">
+      <p class="title__text">Boundless Travel</p>
+    </div>
+    <nav>
+      <ul class="nav__list">
+        <li><a href="/" class="nav__list__link">Home</a></li>
+        <li><a href="about.html" class="nav__list__link">About Us</a></li>
+        <li><a href="contact.html" class="nav__list__link">Contact Us</a></li>
+        <li>
+          <form role="search" class="nav__list_form">
+            <input type="text" aria-label="search" placeholder="Your destination">
+            <button type="submit" class="nav__list__btn">Search</button>
+            <button type="reset" class="nav__list__btn">Clear</button>
+          </form>
+        </li>
+      </ul>
+
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero__intro">
+      <h1>SMART TRAVEL STARTS HERE</h1>
+      <p class="hero__intro__text">Find your perfect getaway using our advanced recommendation engine. <span class="hero__intro__text__span">Boundless Travel</span> simplifies your search for
+        global destinations, offering an intuitive interface designed for modern explorers.</p>
+      <button class="hero__intro__btn">Book now</button>
+    </div>
+  </section>
+
+  <section class="relleno"></section>
+
 
   <script src="assets/js/script.js"></script>
 </body>
+
 </html>

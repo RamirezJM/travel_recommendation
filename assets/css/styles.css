@@ -1,0 +1,167 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  color-scheme: light;
+  scroll-behavior: smooth;
+}
+
+:root {
+  --primary: #006188;
+  --light: #EAF0CE;
+  --accent: #FF7F50;
+  --font: #323232;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  line-height: 1.6;
+  color: var(--font);
+}
+
+h1, h2, h3, .title__text{
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+button {
+  padding: 0.5em 1em;
+  border: none;
+  border-radius: 5px;
+}
+
+image {
+  display: block;
+  width: 100%;
+}
+
+input{
+  border-radius: 5px;
+  padding: 0.5em;
+  border: none;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1em;
+  gap: 1em;
+  background-color: var(--light);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1); /
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+}
+
+.title__img {
+  width: 50px;
+}
+
+.title__text{
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: var(--primary);
+}
+
+.nav__list {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+}
+
+.nav__list__link {
+  text-decoration: none;
+  color: var(--font);
+}
+ .nav__list__btn{
+  background-color: var(--primary);
+  color: #ffffff;
+ }
+
+
+
+.hero {
+  background: rgba(0, 0, 0, 0.7) url('../images/background1.jpg') no-repeat center/cover;
+  background-blend-mode: multiply;
+}
+
+.hero__intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2em 4em;
+  color: #ffffff;
+}
+
+h1{
+  font-size: 3rem;
+  font-weight: 500;
+  text-align: center;
+}
+
+.hero__intro__text {
+  font-size: 1.1rem;
+  text-align: center;
+  margin-block: 1em;
+}
+
+.hero__intro__text__span{
+  color: var(--accent);
+  font-size: 1.2rem;
+  font-weight: 600;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.hero__intro__btn {
+  background-color: var(--accent);
+}
+ .relleno{
+  height: 90vh;
+  color: var(--light);
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width:700px){
+  .nav__list{
+    flex-direction: row;
+  }
+
+  .hero__intro__text{
+    width: 70%;
+  }
+}
+
+@media (min-width:900px){
+  header{
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .hero__intro{
+    padding-block: 6em;
+  }
+}

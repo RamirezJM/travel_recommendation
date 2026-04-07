@@ -22,7 +22,10 @@ body {
   color: var(--font);
 }
 
-h1, h2, h3, .title__text{
+h1,
+h2,
+h3,
+.title__text {
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
@@ -37,11 +40,14 @@ image {
   width: 100%;
 }
 
-input{
+input,
+textarea {
   border-radius: 5px;
   padding: 0.5em;
   border: none;
 }
+
+/* ==== Header ==== */
 
 header {
   display: flex;
@@ -54,7 +60,7 @@ header {
   position: sticky;
   top: 0;
   z-index: 1000;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.1); /
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);/
 }
 
 .title {
@@ -67,7 +73,7 @@ header {
   width: 50px;
 }
 
-.title__text{
+.title__text {
   font-size: 1.3rem;
   font-weight: 600;
   color: var(--primary);
@@ -86,12 +92,13 @@ header {
   text-decoration: none;
   color: var(--font);
 }
- .nav__list__btn{
+
+.nav__list__btn {
   background-color: var(--primary);
   color: #ffffff;
- }
+}
 
-
+/*  ==== Hero ==== */
 
 .hero {
   background: rgba(0, 0, 0, 0.7) url('../images/background1.jpg') no-repeat center/cover;
@@ -107,7 +114,7 @@ header {
   color: #ffffff;
 }
 
-h1{
+h1 {
   font-size: 3rem;
   font-weight: 500;
   text-align: center;
@@ -119,7 +126,7 @@ h1{
   margin-block: 1em;
 }
 
-.hero__intro__text__span{
+.hero__intro__text__span {
   color: var(--accent);
   font-size: 1.2rem;
   font-weight: 600;
@@ -128,40 +135,244 @@ h1{
 
 .hero__intro__btn {
   background-color: var(--accent);
-}
- .relleno{
-  height: 90vh;
   color: var(--light);
- }
+  font-size: 1.1rem;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 5px;
+  padding: 0.5em 1em;
+}
+
+/* === Cards container ==== */
+
+.response__title {
+  text-align: center;
+  margin-block: 1em;
+}
+
+.response__container {
+  width: 90%;
+  margin: 0 auto;
+  padding: 3em 1em;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2em;
+}
+
+
+.response__card {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  border-radius: 5px;
+  /*  border: var(--font) solid 2px; */
+  box-shadow: 1px 1px 1px var(--primary);
+}
+
+.response__card__title {
+  text-align: center;
+}
+
+.response__card__image {
+  order: -1;
+}
+
+.response__card__text {
+  padding: 1em;
+}
+
+/*  === Footer === */
+
+footer {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  gap: 1em;
+  padding: 1em;
+  background-color: var(--light);
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+
+.brand__logo {
+  width: 50px;
+}
+
+.brand__name {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-weight: 600;
+}
+
+.social {
+  text-align: center;
+}
+
+.social__icons__img {
+  width: 2rem;
+}
+
+.copyright {
+  flex-basis: 100%;
+  text-align: center;
+  font-size: 0.8rem;
+}
+
+
+/*  === About us === */
+
+.about,
+.contact {
+  width: 90%;
+  margin: 0 auto;
+  padding: 1em;
+}
+
+.about__title,
+.contact__title {
+  font-size: 2.5rem;
+  margin-block: 1em;
+}
+
+.about__container {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 3em;
+}
+
+.about__img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  justify-self: center;
+  border-radius: 5px;
+}
+
+.about__text__title {
+  text-align: center;
+  margin-bottom: 1em;
+}
+
+.about__text__span {
+  color: var(--accent);
+  font-weight: 600;
+}
+
+.about__team {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3em;
+  justify-content: center;
+  margin-block: 2em;
+}
+
+.about__team__title {
+  flex-basis: 100%;
+  text-align: center;
+  margin-top: 2em;
+}
+
+.about__team__card {
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+}
+
+.about__team__card__img {
+  border-radius: 50%;
+  width: 40%;
+  align-self: center;
+}
+
+.about__team__card__title {
+  align-self: center;
+  margin-block: 1em;
+}
+
+.about__team__card__list li::marker {
+  color: var(--primary);
+
+}
+
+/*  === Contact === */
+
+.contact__intro {
+  max-width: 600px;
+  margin: 1em auto;
+  text-align: center;
+}
+
+.contact__form {
+  max-width: 600px;
+  margin: 2em auto;
+
+  input,
+  textarea {
+    border: var(--primary) solid 1px;
+    margin-top: 0.5em;
+
+  }
+
+}
+
+.form__group {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin-block: 1em;
+}
+
+.form__btn{
+  background-color: var(--accent);
+  color: var(--light);
+  font-size: 1.1rem;
+  font-weight: 600;
+  display: block;
+  justify-self: center;
+}
 
 
 
 
 
+/*  === Media queries */
 
-
-
-
-
-
-
-@media (min-width:700px){
-  .nav__list{
+@media (min-width:700px) {
+  .nav__list {
     flex-direction: row;
   }
 
-  .hero__intro__text{
+  .hero__intro__text {
     width: 70%;
+  }
+
+
+
+
+  footer {
+    flex-direction: row;
+    justify-content: space-around;
   }
 }
 
-@media (min-width:900px){
-  header{
+@media (min-width:900px) {
+  header {
     flex-direction: row;
     justify-content: space-between;
   }
 
-  .hero__intro{
+  .hero__intro {
     padding-block: 6em;
+  }
+
+  .about__container {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .about__img {
+    width: 100%;
   }
 }

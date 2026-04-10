@@ -25,25 +25,25 @@
     </button>
     <nav>
       <ul class="nav__list">
-        <li><a href="/" class="nav__list__link">Home</a></li>
+        <li><a href="/" class="nav__list__link active__link">Home</a></li>
         <li><a href="about.html" class="nav__list__link">About Us</a></li>
         <li><a href="contact.html" class="nav__list__link">Contact Us</a></li>
         <li>
-          <form role="search" class="nav__list_form">
-            <input type="text" aria-label="search" placeholder="Your destination">
-            <button type="submit" class="nav__list__btn">Search</button>
-            <button type="reset" class="nav__list__btn">Clear</button>
+          <form role="search" class="nav__list__form">
+            <input type="text" aria-label="search" class="search__input" placeholder="Your destination">
+            <button class="nav__list__btn search__btn">Search</button>
+            <button type="reset" class="nav__list__btn clear__btn">Clear</button>
           </form>
         </li>
       </ul>
-
     </nav>
   </header>
 
   <section class="hero">
     <div class="hero__intro">
       <h1>SMART TRAVEL STARTS HERE</h1>
-      <p class="hero__intro__text">Find your perfect getaway using our advanced recommendation engine. <span class="hero__intro__text__span">Boundless Travel</span> simplifies your search for
+      <p class="hero__intro__text">Find your perfect getaway using our advanced recommendation engine. <span
+          class="hero__intro__text__span">Boundless Travel</span> simplifies your search for
         global destinations, offering an intuitive interface designed for modern explorers.</p>
       <a href="contact.html" class="hero__intro__btn">Book now</a>
     </div>
@@ -51,24 +51,7 @@
 
   <section class="response">
     <h2 class="response__title">Popular Destinations</h2>
-    <div class="response__container">
-      <article class="response__card">
-        <h3 class="response__card__title">Melbourne</h3>
-        <p class="response__card__text">A cultural hub famous for its art, food, and diverse neighborhoods.</p>
-        <img src="assets/images/melbourne.jpg" alt="Melbourne" class="response__card__image">
-      </article>
-      <article class="response__card">
-        <h3 class="response__card__title">São Paulo</h3>
-        <p class="response__card__text">The financial hub with diverse culture, arts, and a vibrant nightlife.</p>
-        <img src="assets/images/sao-paulo.jpg" alt="Säo Paulo" class="response__card__image">
-      </article>
-      <article class="response__card">
-        <h3 class="response__card__title">Taj Mahal</h3>
-        <p class="response__card__text">An iconic symbol of love and a masterpiece of Mughal architecture.</p>
-        <img src="assets/images/taj-mahal.jpg" alt="Taj Mahal" class="response__card__image">
-      </article>
-    </div>
-
+    <div class="response__container" id="response__container"></div>
   </section>
 
   <footer>
@@ -89,7 +72,7 @@
     <p class="copyright">RamirezJM - IBM JavaScript Backend Developer Professional Certificate</p>
   </footer>
 
-
+  <script src="assets/js/search-script.js"></script>
   <script src="assets/js/script.js"></script>
 </body>
 
